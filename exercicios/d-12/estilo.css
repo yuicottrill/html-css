@@ -6,16 +6,19 @@
 :root{
     --fonte-passion: 'Passion One', 'cursive';
     --fonte-sriracha: 'Sriracha', 'cursive';
-    --fonte-padrão: Arial, Verdana, Helvetica, sans-serif;
+    --fonte-padrão: Verdana, Geneva, Tahoma, sans-serif;
 }
+
 *{
     margin: 0px;
     padding: 0px;
+    font-size: 1em;
 }
 
 html, body{
     min-height: 100vh;
     background-color: darkgray;
+    font-family: var(--fonte-padrão);
 
 }
 
@@ -26,18 +29,20 @@ header{
 }
 
 header > h1{
-    padding: 50px;
+    padding-top: 50px;
     font-variant: small-caps;
+    font-family: var(--fonte-passion);
+    font-size: 10vh;
 }
 
 header > p{
     padding-bottom: 50px;
 
 }
-a{
+header a, footer a{
     color: white;
     text-decoration: none;
-    font-weight: bold;
+    font-weight: bolder;
 }
 
 header a:hover, footer a:hover{
@@ -47,7 +52,9 @@ section{
     padding-top: 10vh;
     padding-bottom: 10vh;
     line-height: 2em;
-    padding-left: 30px
+    padding-left: 30px;
+    font-family: var(--fonte-sriracha); 
+    font-size: 3.5vw; 
 }
 section.guerreiro{
     background-color: white;
@@ -58,7 +65,8 @@ section.imagem{
     color: white;
 }
 section.imagem > p{
-    width: 400px;
+    display: inline-block;
+    padding: 5px;
     background-color: rgba(0, 0, 0, 0.253)
 }
 footer{

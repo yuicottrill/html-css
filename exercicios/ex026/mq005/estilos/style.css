@@ -16,9 +16,21 @@ header > h1{
     padding: 10px;
     text-align: center;
 }
+#menu{
+    background-color: rgb(48, 48, 48);
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    cursor: pointer;
+}
+#menu:hover{
+    background-color: white;
+    color: black;
+}
 
 nav{
-    display: block;
+    display: none;
 }
 nav > ul{
     list-style-type: none;
